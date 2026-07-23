@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.welcome {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+.btn:active {
+  background-color: #1e40af;
+}
+
+.practice-form {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.practice-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+
+.practice-form label:first-of-type {
+  margin-top: 0;
+}
+
+.practice-form input[type="date"],
+.practice-form input[type="number"],
+.practice-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.skill-group {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+}
+
+.skill-group legend {
+  font-weight: 500;
+  padding: 0 0.25rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.skill-error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.practice-form textarea {
+  resize: vertical;
+}
+
+.practice-form .btn {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.practice-log {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.practice-log h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#logList {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.log-entry {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background-color: #f9fafb;
+}
+
+.log-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.log-entry .log-date {
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0;
+}
+
+.log-entry .edit-btn {
+  width: auto;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.log-entry .log-details {
+  color: #555555;
+  font-size: 0.95rem;
+}
+
+.log-entry .log-notes {
+  margin-top: 0.5rem;
+  color: #333333;
+  font-size: 0.95rem;
+}
+
+.practice-log .btn {
+  width: 100%;
+}

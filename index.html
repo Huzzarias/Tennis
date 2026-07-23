@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tennis Practice Log</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🎾 Tennis Practice Log</h1>
+
+    <div id="welcomeSection">
+      <p class="welcome">Welcome! Record today's practice.</p>
+      <button id="newPracticeBtn" class="btn">New Practice</button>
+    </div>
+
+    <form id="practiceForm" class="practice-form hidden">
+      <label for="practiceDate">Date</label>
+      <input type="date" id="practiceDate" required>
+
+      <label for="duration">Duration (minutes)</label>
+      <input type="number" id="duration" min="1" placeholder="e.g. 60" required>
+
+      <fieldset class="skill-group">
+        <legend>Skills Practiced</legend>
+        <label class="checkbox-label">
+          <input type="checkbox" name="skills" value="Serve">
+          Serve
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="skills" value="Forehand">
+          Forehand
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="skills" value="Backhand">
+          Backhand
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="skills" value="Volley">
+          Volley
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="skills" value="Match Play">
+          Match Play
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="skills" value="Fitness">
+          Fitness
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="skills" value="Other">
+          Other
+        </label>
+      </fieldset>
+      <p id="skillError" class="skill-error hidden">Please select at least one skill.</p>
+
+      <label for="notes">Practice Notes</label>
+      <textarea id="notes" rows="4" placeholder="What did you work on?"></textarea>
+
+      <button type="submit" class="btn">Save Practice</button>
+    </form>
+
+    <section id="practiceLog" class="practice-log hidden">
+      <h2>Your Practice Log</h2>
+      <ul id="logList"></ul>
+      <button id="addAnotherBtn" class="btn">New Practice</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
